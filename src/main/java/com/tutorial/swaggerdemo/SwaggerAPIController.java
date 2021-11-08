@@ -14,6 +14,11 @@ public class SwaggerAPIController {
         return productsList;
     }
 
+    @GetMapping(value = "/products")
+    public List<String> getProducts2() {
+        return productsList;
+    }
+
     @PostMapping(value = "/products")
     public String createProduct() {
         productsList.add("Honey");
